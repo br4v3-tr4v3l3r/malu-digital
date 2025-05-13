@@ -57,3 +57,99 @@
   </div>
 </body>
 </html>
+Wenn du statt eines Fließtextes mehrere Absätze oder Listen willst, passe den .text-Inhalt einfach mit <p> oder <ul> an.
+
+You said:
+Ergänze Referenzen und Artikel  unten auf der Seite mit Beispiellinks
+ChatGPT said:
+Hier ist der ergänzte HTML-Code mit einem neuen Abschnitt „Referenzen & Artikel“ ganz unten auf der Seite, inklusive Beispiel-Links:
+
+html
+Copy
+Edit
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>malu-digital</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      background: url("malu-digital.png") no-repeat center center;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .text-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 25vh;
+    }
+
+    .text {
+      width: 80%;
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 2rem;
+      border-radius: 12px;
+      font-size: 2em;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    .footer {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1em;
+    }
+
+    .footer a {
+      color: #1a1a1a;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .text {
+        font-size: 1.5em;
+        padding: 1.5rem;
+      }
+
+      .footer {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="text-wrapper">
+    <div class="text">
+      <strong>MALU-Digital</strong><br>
+      Vorhaut und Beschneidung – Jüdische Aufklärung mit modernen Mitteln.
+    </div>
+  </div>
+
+  <div class="footer">
+    <strong>Referenzen & Artikel:</strong><br>
+    <a href="https://www.jg-chemnitz.de/2020/01/29/beschneidung-im-judentum/" target="_blank">JG-Chemitz</a> |
+    <a href="https://www.holy-days.de/lexikon/b/beschneidung-im-judentum" target="_blank">Religiöse Sichtweise</a> |
+    <a href="https://medizindoc.de/beschneidung-bei-jungen/" target="_blank">Historische Einordnung</a>
+  </div>
+</body>
+</html>
