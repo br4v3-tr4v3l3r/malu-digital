@@ -1,24 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-  <title>malu-digital</title>
   <meta charset="UTF-8">
+  <title>malu-digital</title>
   <style>
-    body {
+    html, body {
       margin: 0;
-      background: #ebd6b5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      padding: 0;
+      height: 100%;
     }
-    img {
-      max-width: 100%;
-      height: auto;
+
+    body {
+      background: url("malu-digital.png") no-repeat center center;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .text-wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .text {
+      margin-top: 25vh;
+      width: 80%;
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 2rem;
+      border-radius: 12px;
+      font-size: 2em;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 768px) {
+      .text {
+        font-size: 1.5em;
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
-  <img src="malu-digital.png" alt="malu-digital">
+  <div class="text-wrapper">
+    <div class="text">
+      <strong>MALU-Digital</strong><br>
+      Vorhaut und Beschneidung – Jüdische Aufklärung mit modernen Mitteln.
+    </div>
+  </div>
 </body>
 </html>
